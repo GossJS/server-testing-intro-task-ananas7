@@ -1,0 +1,36 @@
+{
+  "name": "firsst-server",
+  "version": "1.0.0",
+  "description": "репозиторий-обёртка к заданию по тестированию серверного приложения",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "yarn build && mocha test",
+    "build": "babel server.js --out-file bundle.js",
+    "start-bundle": "node bundle.js",
+    "start": "yarn build && yarn start-bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GossJS/server-testing-intro-task-ananas7.git"
+  },
+  "author": "Ilya Lomtev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GossJS/server-testing-intro-task-ananas7/issues"
+  },
+  "homepage": "https://github.com/GossJS/server-testing-intro-task-ananas7#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "moment": "^2.18.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3"
+  }
+}
